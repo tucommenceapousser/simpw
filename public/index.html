@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Hacker</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/ico/favicon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/ico/favicon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/ico/favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/ico/favicon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/ico/favicon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/ico/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/ico/favicon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/ico/favicon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/ico/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/ico/favicon-192x192.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/ico/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/ico/favicon.ico">
+
+    <!-- Meta Tags pour Windows -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ico/favicon-144x144.png">
+    <meta name="msapplication-config" content="/ico/browserconfig.xml">
+
+    <!-- Meta Tags pour SEO -->
+    <meta name="description" content="Simulateur d'interface hacker avec animations interactives et effets dynamiques.">
+    <meta name="keywords" content="hacker, interface, simulation, animation, fun, interactive">
+    <meta name="author" content="trhacknon">
+
+    <!-- Meta Tags pour les réseaux sociaux -->
+    <meta property="og:title" content="Interface Hacker">
+    <meta property="og:description" content="Simulateur d'interface hacker avec animations interactives et effets dynamiques.">
+    <meta property="og:image" content="https://l.top4top.io/p_31435pn1z0.jpg">
+    <meta property="og:url" content="https://simpw-trkn.replit.app">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Interface Hacker">
+    <meta name="twitter:description" content="Simulateur d'interface hacker avec animations interactives et effets dynamiques.">
+    <meta name="twitter:image" content="https://l.top4top.io/p_31435pn1z0.jpg">
+
+    <!-- Stylesheet et animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Ajout de FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div id="overlay"></div>
+    <div id="header" class="animate__animated animate__flash">
+        <h1>Hacker Interface</h1>
+    </div>
+    <div id="console" class="animate__animated animate__fadeInUp"></div>
+    <div id="countdown">Temps restant : <span id="time">00:30</span></div>
+    <audio id="typewriter-sound" preload="auto" src="typewriter.mp3"></audio>
+    <audio id="alert-sound" preload="auto" src="alert.mp3"></audio>
+    <input type="file" id="fileInput" multiple style="display: none;">
+    <button id="fileButton" class="animate__animated animate__pulse animate__infinite">Accéder aux fichiers <i class="fas fa-folder-open"></i></button>
+    <button id="webcamButton" class="animate__animated animate__pulse animate__infinite">Activer la webcam <i class="fas fa-video"></i></button>
+    <video id="webcamVideo" autoplay style="display: none;"></video>
+    <canvas id="webcamCanvas" style="display: none;"></canvas>
+    <img id="webcamPhoto" style="display: none;">
+    <p id="photoText" style="display: none;">ma voui tié beau mon fils</p>
+    <div id="fileList"></div>
+    <script src="script.js"></script>
+</body>
+</html>
